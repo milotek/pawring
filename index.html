@@ -4,31 +4,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pawring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Montserrat:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --base: #1e1e2e;
+            --mantle: #181825;
+            --surface0: #313244;
+            --surface1: #45475a;
+            --text: #cdd6f4;
+            --subtext: #bac2de;
+            --accent: #ffbdbd;
+        }
         body {
             max-width: 36rem;
             margin: 4rem auto;
             padding: 0 1rem;
-            background: #fff5f7;
-            color: #5a2d36;
-            font: 1rem/1.5 system-ui, sans-serif;
+            background: var(--base);
+            color: var(--text);
+            font: 1.05rem/1.6 "Source Sans 3", sans-serif;
         }
-        h1 { color: #ff748c; }
-        a { color: #ff748c; }
+        h1, h2, h3 {
+            font-family: "Montserrat", sans-serif;
+            color: var(--accent);
+        }
+        h2, h3 { color: var(--subtext); }
+        h3 { font-size: 1rem; }
+        a { color: var(--accent); }
+        a:hover { color: var(--text); }
+        em { color: var(--accent); }
+        code, pre { font-family: "Fira Mono", monospace; }
+        code {
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            background: var(--surface0);
+        }
         pre {
             padding: 0.75rem;
             overflow-x: auto;
-            border: 2px solid #ffabba;
+            border: 2px solid var(--surface1);
             border-radius: 0.5rem;
-            background: #fff;
+            background: var(--mantle);
+        }
+        ::selection {
+            background: var(--accent);
+            color: var(--base);
         }
     </style>
 </head>
 <body>
     <h1>pawring</h1>
+    <h2>pawring? WTF is this crap lol</h2>
     <p>ARE YOU worried that much of the online world is consolidating too much on closed, proprietary platforms? Those, of which are owned by megacorps? Those, of which have algorithms engineered to maximise user attention? Those, of which, don't deserve an ounce of beautiful human creativity thrown their way?</p>
-    <p>K well so are we but idk 2 fix dat shit lol so we're just making our own little community so we don't die of cancer from all the braindead normies on the internet!!</p>
-    <p>We're more than <em>just a</em> webring! :D</p>
+    <p>k well so are we but idk 2 fix dat shit lol so we're just making our own little community to make ourselves distinct from every bot and brainless moron on the internet!!</p>
+    <h2>More about us</h2>
+    <p>We're more than <em>just a</em> webring! All of our founding members met while working at Google - and we really liked how well-organised and resourceful the company's internal intranet/VPN was. If you've ever worked there, you probably thought things like:</p>
+    <ul>
+        <li>Go links</li>
+        <li>Critique</li>
+        <li>Google3 / Codesearch</li>
+        <li>(<em>insert 500 internal tools that cannot be named</em>)</li>
+    </ul>
+    <p>... were absolutely amazing. We kind of want to establish our own intranet/VPN like that, with smooth and unnoticeable integration into our devices.</p>
+    <h3>Ok, so you want your own intranet, internal tools, monorepo, coding standards, et cetera. Aren't you just describing making an unpaid software engineering company?</h3>
+    <p>Well, you're not obligated to do any work, are you? ;)</p>
+    <h2>Yay! Sign me up!</h2>
+    <p>At the moment we are really tiny, and we only really have a single flat trust level across the org akin to "admin across everything". We can have this because we (current members) have known each other well for a while, and have established we're not gonna do any stupid shit. That said, we're always looking for cool fellas to join ;)</p>
+    <p>Okay, well, if you want to "apply" anyway, message me on Discord: <code>@pixeljam</code></p>
+    <p>Alternatively, you can email me at: <a href="mailto:milo@milotek.dev"><code>milo@milotek.dev</code></a></p>
     <h2>members</h2>
     <ul>
         <li><a href="https://milotek.dev">milotek.dev</a></li>
