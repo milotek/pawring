@@ -2,6 +2,7 @@
     const sites = [
         "milotek.dev",
         "tmkcell.cc",
+        "berg.cat",
     ];
     const root = document.getElementById("pawring");
     if (!root) return;
