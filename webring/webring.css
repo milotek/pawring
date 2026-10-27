@@ -1,0 +1,66 @@
+#pawring {
+    --pawring-pink: #ffabba;
+    --pawring-hot: #ff748c;
+    --pawring-paw: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='32' cy='44' rx='15' ry='12'/%3E%3Cellipse cx='13' cy='27' rx='6' ry='8' transform='rotate(-20 13 27)'/%3E%3Cellipse cx='25' cy='15' rx='6' ry='8.5' transform='rotate(-6 25 15)'/%3E%3Cellipse cx='39' cy='15' rx='6' ry='8.5' transform='rotate(6 39 15)'/%3E%3Cellipse cx='51' cy='27' rx='6' ry='8' transform='rotate(20 51 27)'/%3E%3C/svg%3E");
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0.4rem 0.6rem;
+    border: 2px solid var(--pawring-pink);
+    border-radius: 999px;
+    background: #fff5f7;
+    color: #5a2d36;
+    font: 600 0.9rem/1.2 system-ui, sans-serif;
+    transition: border-color 0.15s;
+}
+
+#pawring:hover {
+    border-color: var(--pawring-hot);
+}
+
+#pawring .pawringMain {
+    margin: 0;
+    text-align: center;
+}
+
+#pawring .pawringMain a {
+    color: var(--pawring-hot);
+    text-decoration: none;
+}
+
+#pawring .pawringMain a:hover {
+    text-decoration: underline;
+}
+
+#pawring .pawringLeft,
+#pawring .pawringRight {
+    flex: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: var(--pawring-pink);
+    -webkit-mask: var(--pawring-paw) center / contain no-repeat;
+    mask: var(--pawring-paw) center / contain no-repeat;
+    transition: background-color 0.15s, transform 0.15s;
+}
+
+#pawring .pawringLeft {
+    transform: rotate(-90deg);
+}
+
+#pawring .pawringRight {
+    transform: rotate(90deg);
+}
+
+#pawring .pawringLeft:hover,
+#pawring .pawringLeft:focus-visible {
+    background: var(--pawring-hot);
+    transform: rotate(-90deg) scale(1.15);
+}
+
+#pawring .pawringRight:hover,
+#pawring .pawringRight:focus-visible {
+    background: var(--pawring-hot);
+    transform: rotate(90deg) scale(1.15);
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pawring</title>
+    <style>
+        body {
+            max-width: 36rem;
+            margin: 4rem auto;
+            padding: 0 1rem;
+            background: #fff5f7;
+            color: #5a2d36;
+            font: 1rem/1.5 system-ui, sans-serif;
+        }
+        h1 { color: #ff748c; }
+        a { color: #ff748c; }
+        pre {
+            padding: 0.75rem;
+            overflow-x: auto;
+            border: 2px solid #ffabba;
+            border-radius: 0.5rem;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>pawring</h1>
+    <p>a little webring.</p>
+    <h2>members</h2>
+    <ul>
+        <li><a href="https://milotek.dev">milotek.dev</a></li>
+        <li><a href="https://tmkcell.cc">tmkcell.cc</a></li>
+    </ul>
+    <h2>join</h2>
+    <p>add your site to the list in <a href="https://github.com/milotek/pawring/blob/main/webring/webring.js">webring.js</a> with a pull request, then put this on your site:</p>
+    <pre>&lt;script src="https://pawr.ing/webring/webring.js" defer&gt;&lt;/script&gt;
+&lt;div id="pawring"&gt;&lt;/div&gt;</pre>
+    <p>set <code>data-pawring-css="off"</code> on the div to style it yourself.</p>
+</body>
+</html>
